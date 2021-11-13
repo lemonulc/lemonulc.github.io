@@ -1,14 +1,21 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <title>Hexo</title>
-
-  <!-- keywords -->
-  
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
   <meta name="description" content="第一章 引论 ctrl+alt+f识别文字1.1 小算法从n个数中取第k个最大者 12345678910111213141516171819202122&#x2F;&#x2F;直接冒泡import java.lang.Integer;public class BubbleSortTest&amp;#123;	public static void main(String[] args) &amp;#123;		Integer[] ar">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
@@ -20,180 +27,223 @@
 <meta property="article:published_time" content="2021-11-12T13:01:10.219Z">
 <meta property="article:modified_time" content="2021-09-28T14:09:12.702Z">
 <meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="c:/Users/lemon/AppData/Roaming/Typora/typora-user-images/image-20210928220854423.png">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+  <title>Hexo</title>
 
-  
-  
-
-  
-<script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
-
-  
-<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
 
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
   
-<meta name="generator" content="Hexo 5.4.0"></head>
-<body>
-  <div id="container">
-    <div id="particles-js"></div>
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			
-			<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
-			
-		</a>
-
-		<hgroup>
-		  <h1 class="header-author"><a href="/"></a></h1>
-		</hgroup>
-
-		
-
-		
-			<div class="switch-btn">
-				<div class="icon">
-					<div class="icon-ctn">
-						<div class="icon-wrap icon-house" data-idx="0">
-							<div class="birdhouse"></div>
-							<div class="birdhouse_holes"></div>
-						</div>
-						<div class="icon-wrap icon-ribbon hide" data-idx="1">
-							<div class="ribbon"></div>
-						</div>
-						
-						<div class="icon-wrap icon-link hide" data-idx="2">
-							<div class="loopback_l"></div>
-							<div class="loopback_r"></div>
-						</div>
-						
-						
-					</div>
-					
-				</div>
-				<div class="tips-box hide">
-					<div class="tips-arrow"></div>
-					<ul class="tips-inner">
-						<li>菜单</li>
-						<li>标签</li>
-						
-						<li>友情链接</li>
-						
-						
-					</ul>
-				</div>
-			</div>
-		
-
-		<div class="switch-area">
-			<div class="switch-wrap">
-				<section class="switch-part switch-part1">
-					<nav class="header-menu">
-						<ul>
-						
-							<li><a href="/">主页</a></li>
-				        
-							<li><a href="/archives">所有文章</a></li>
-				        
-						</ul>
-					</nav>
-					<nav class="header-nav">
-						<div class="social">
-							
-						</div>
-					</nav>
-				</section>
-				
-				
-				<section class="switch-part switch-part2">
-					<div class="widget tagcloud" id="js-tagcloud">
-						
-					</div>
-				</section>
-				
-				
-				
-				<section class="switch-part switch-part3">
-					<div id="js-friends">
-					
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/smackgg/hexo-theme-smackdown">smackdown</a>
-			        
-			        </div>
-				</section>
-				
-
-				
-			</div>
-		</div>
-	</header>				
-</div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-  	<div class="overlay">
-  		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide"></h1>
-  	</div>
-	<div class="intrude-less">
-		<header id="header" class="inner">
-			<div class="profilepic">
-				<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
-			</div>
-			<hgroup>
-			  <h1 class="header-author"></h1>
-			</hgroup>
-			
-			<nav class="header-menu">
-				<ul>
-				
-					<li><a href="/">主页</a></li>
-		        
-					<li><a href="/archives">所有文章</a></li>
-		        
-		        <div class="clearfix"></div>
-				</ul>
-			</nav>
-			<nav class="header-nav">
-				<div class="social">
-					
-				</div>
-			</nav>
-		</header>				
-	</div>
-</nav>
-      <div class="body-wrap"><article id="post-数据结构" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2021/11/12/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="article-date">
-  	<time datetime="2021-11-12T13:01:10.219Z" itemprop="datePublished">2021-11-12</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
     
     
-    <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第一章-引论-ctrl-alt-f识别文字"><a href="#第一章-引论-ctrl-alt-f识别文字" class="headerlink" title="第一章 引论 ctrl+alt+f识别文字"></a>第一章 引论 ctrl+alt+f识别文字</h1><h2 id="1-1-小算法"><a href="#1-1-小算法" class="headerlink" title="1.1 小算法"></a>1.1 小算法</h2><p>从n个数中取第k个最大者</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//直接冒泡</span></span><br><span class="line"><span class="keyword">import</span> java.lang.Integer;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BubbleSortTest</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Integer[] arr = &#123;<span class="number">21</span>,<span class="number">453</span>,<span class="number">653</span>,<span class="number">6</span>,<span class="number">76</span>,<span class="number">23</span>,<span class="number">8</span>,<span class="number">2</span>,<span class="number">89</span>,<span class="number">90</span>&#125;;</span><br><span class="line">		System.out.println(BubbleSort.sort(arr,<span class="number">5</span>));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BubbleSort</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">sort</span><span class="params">(Integer[] arr, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; arr.length - i - <span class="number">1</span>; j++) &#123;</span><br><span class="line">				<span class="keyword">if</span> (arr[j] &lt; arr[j + <span class="number">1</span>]) &#123;</span><br><span class="line">					<span class="keyword">int</span> temp = arr[j];</span><br><span class="line">					arr[j] = arr[j+<span class="number">1</span>];</span><br><span class="line">					arr[j+<span class="number">1</span>] = temp;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> arr[k-<span class="number">1</span>];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
 
 
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将前k个排序，再依次取后面的元素，如果取到的数比第k个大，则</span></span><br><span class="line"><span class="comment">//找到合适位置放入并挤出第k个元素</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PartSortTest</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Integer[] arr = &#123;<span class="number">21</span>,<span class="number">453</span>,<span class="number">653</span>,<span class="number">6</span>,<span class="number">76</span>,<span class="number">23</span>,<span class="number">8</span>,<span class="number">2</span>,<span class="number">89</span>,<span class="number">90</span>&#125;;</span><br><span class="line">		System.out.println(PartSort.sort(arr,<span class="number">9</span>));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PartSort</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">sort</span><span class="params">(Integer[] arr,<span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; k; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; k - i -<span class="number">1</span> ; j++) &#123;</span><br><span class="line">				<span class="keyword">if</span> (arr[j] &lt; arr[j+<span class="number">1</span>]) &#123;</span><br><span class="line">					<span class="keyword">int</span> temp = arr[j];</span><br><span class="line">					arr[j] = arr[j+<span class="number">1</span>];</span><br><span class="line">					arr[j+<span class="number">1</span>] = temp;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = k; i &lt; arr.length; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = k - <span class="number">1</span> ; j &gt; <span class="number">0</span>; j--) &#123;</span><br><span class="line">				<span class="keyword">if</span> (arr[j] &lt; arr[i]) &#123;</span><br><span class="line">					arr[j] = arr[j-<span class="number">1</span>];</span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					arr[j+<span class="number">1</span>] = arr[i];</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> arr[k-<span class="number">1</span>];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.12","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname"}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-11-12 21:01" pubdate>
+        November 12, 2021 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      4.9k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      15 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body">
+              <h1 id="第一章-引论-ctrl-alt-f识别文字"><a href="#第一章-引论-ctrl-alt-f识别文字" class="headerlink" title="第一章 引论 ctrl+alt+f识别文字"></a>第一章 引论 ctrl+alt+f识别文字</h1><h2 id="1-1-小算法"><a href="#1-1-小算法" class="headerlink" title="1.1 小算法"></a>1.1 小算法</h2><p>从n个数中取第k个最大者</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">//直接冒泡</span><br><span class="hljs-keyword">import</span> java.lang.Integer;<br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BubbleSortTest</span></span>&#123;<br>	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>		Integer[] arr = &#123;<span class="hljs-number">21</span>,<span class="hljs-number">453</span>,<span class="hljs-number">653</span>,<span class="hljs-number">6</span>,<span class="hljs-number">76</span>,<span class="hljs-number">23</span>,<span class="hljs-number">8</span>,<span class="hljs-number">2</span>,<span class="hljs-number">89</span>,<span class="hljs-number">90</span>&#125;;<br>		System.out.println(BubbleSort.sort(arr,<span class="hljs-number">5</span>));<br>	&#125;<br>&#125;<br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BubbleSort</span></span>&#123;<br>	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">sort</span><span class="hljs-params">(Integer[] arr, <span class="hljs-keyword">int</span> k)</span> </span>&#123;<br>		<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) &#123;<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; arr.length - i - <span class="hljs-number">1</span>; j++) &#123;<br>				<span class="hljs-keyword">if</span> (arr[j] &lt; arr[j + <span class="hljs-number">1</span>]) &#123;<br>					<span class="hljs-keyword">int</span> temp = arr[j];<br>					arr[j] = arr[j+<span class="hljs-number">1</span>];<br>					arr[j+<span class="hljs-number">1</span>] = temp;<br>				&#125;<br>			&#125;<br>		&#125;<br>		<span class="hljs-keyword">return</span> arr[k-<span class="hljs-number">1</span>];<br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">//将前k个排序，再依次取后面的元素，如果取到的数比第k个大，则</span><br><span class="hljs-comment">//找到合适位置放入并挤出第k个元素</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PartSortTest</span></span>&#123;<br>	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>		Integer[] arr = &#123;<span class="hljs-number">21</span>,<span class="hljs-number">453</span>,<span class="hljs-number">653</span>,<span class="hljs-number">6</span>,<span class="hljs-number">76</span>,<span class="hljs-number">23</span>,<span class="hljs-number">8</span>,<span class="hljs-number">2</span>,<span class="hljs-number">89</span>,<span class="hljs-number">90</span>&#125;;<br>		System.out.println(PartSort.sort(arr,<span class="hljs-number">9</span>));<br>	&#125;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PartSort</span></span>&#123;<br>	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">sort</span><span class="hljs-params">(Integer[] arr,<span class="hljs-keyword">int</span> k)</span> </span>&#123;<br>		<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; k; i++) &#123;<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; k - i -<span class="hljs-number">1</span> ; j++) &#123;<br>				<span class="hljs-keyword">if</span> (arr[j] &lt; arr[j+<span class="hljs-number">1</span>]) &#123;<br>					<span class="hljs-keyword">int</span> temp = arr[j];<br>					arr[j] = arr[j+<span class="hljs-number">1</span>];<br>					arr[j+<span class="hljs-number">1</span>] = temp;<br>				&#125;<br>			&#125;<br>		&#125;<br>		<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = k; i &lt; arr.length; i++) &#123;<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = k - <span class="hljs-number">1</span> ; j &gt; <span class="hljs-number">0</span>; j--) &#123;<br>				<span class="hljs-keyword">if</span> (arr[j] &lt; arr[i]) &#123;<br>					arr[j] = arr[j-<span class="hljs-number">1</span>];<br>				&#125; <span class="hljs-keyword">else</span> &#123;<br>					arr[j+<span class="hljs-number">1</span>] = arr[i];<br>					<span class="hljs-keyword">break</span>;<br>				&#125;<br>			&#125;<br>		&#125;<br>	<span class="hljs-keyword">return</span> arr[k-<span class="hljs-number">1</span>];<br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h2 id="1-2-数学基础知识复习"><a href="#1-2-数学基础知识复习" class="headerlink" title="1.2 数学基础知识复习"></a>1.2 数学基础知识复习</h2><p>级数 归纳推理</p>
 <h3 id="1-2-1-递归四法则"><a href="#1-2-1-递归四法则" class="headerlink" title="1.2.1 递归四法则"></a>1.2.1 递归四法则</h3><p>1.基准情况：必须要有一个已知的并且不需要递归的解</p>
@@ -201,118 +251,203 @@
 <p>3.设计法则：假设所有递归都能运行，不需要刻意证明</p>
 <p>4.合成效益法则：在求解一个问题的同一个实例时，切勿在不同的递归中做                               重复性的工作</p>
 <h2 id="1-4-协变性"><a href="#1-4-协变性" class="headerlink" title="1.4 协变性"></a>1.4 协变性</h2><p>数组有协变性，泛型以及泛型集合不是协变的(使用通配符解决问题)</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">total</span><span class="params">(Collection&lt;? extends Shape&gt; arr)</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">total</span><span class="hljs-params">(Collection&lt;? extends Shape&gt; arr)</span></span>&#123;<br>    <br>&#125;<br></code></pre></td></tr></table></figure>
 
 
 
-<h2 id="课后练习"><a href="#课后练习" class="headerlink" title="课后练习"></a>课后练习</h2><h3 id="解字谜游戏"><a href="#解字谜游戏" class="headerlink" title="解字谜游戏"></a>解字谜游戏</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">WordPuzzle</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">solution</span><span class="params">(<span class="keyword">char</span>[][] arr, String[] words)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//横正查找</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">0</span>; x &lt; arr.length; x++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> y = <span class="number">0</span>; y &lt; arr[<span class="number">0</span>].length; y++) &#123;</span><br><span class="line">                StringBuilder front = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> z = y; z &lt; arr[<span class="number">0</span>].length; z++) &#123;</span><br><span class="line">                    front.append(arr[x][z]);</span><br><span class="line">                    <span class="keyword">for</span> (String word : words) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (word.equals(front.toString())) &#123;</span><br><span class="line">                            System.out.println(front.toString());</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//横反查找</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">0</span>; x &lt; arr.length; x++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> y = arr[<span class="number">0</span>].length - <span class="number">1</span>; y &gt;= <span class="number">0</span>; y--) &#123;</span><br><span class="line">                StringBuilder front = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> z = y; z &gt;= <span class="number">0</span>; z--) &#123;</span><br><span class="line">                    front.append(arr[x][z]);</span><br><span class="line">                    <span class="keyword">for</span> (String word : words) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (word.equals(front.toString())) &#123;</span><br><span class="line">                            System.out.println(front.toString());</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//竖正</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = <span class="number">0</span>; y &lt; arr[<span class="number">0</span>].length; y++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">0</span>; x &lt; arr.length; x++) &#123;</span><br><span class="line">                StringBuilder front = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> z = x; z &lt; arr.length; z++) &#123;</span><br><span class="line">                    front.append(arr[z][y]);</span><br><span class="line">                    <span class="keyword">for</span> (String word : words) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (word.equals(front.toString())) &#123;</span><br><span class="line">                            System.out.println(front.toString());</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//竖反</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = <span class="number">0</span>; y &lt; arr[<span class="number">0</span>].length; y++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> x = arr.length - <span class="number">1</span>; x &gt;= <span class="number">0</span>; x--) &#123;</span><br><span class="line">                StringBuilder front = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> z = x; z &gt;= <span class="number">0</span>; z--) &#123;</span><br><span class="line">                    front.append(arr[z][y]);</span><br><span class="line">                    <span class="keyword">for</span> (String word : words) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (word.equals(front.toString())) &#123;</span><br><span class="line">                            System.out.println(front.toString());</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//正对角线正</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">0</span>; x &lt; arr.length; x++) &#123;</span><br><span class="line">            StringBuilder front = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> z = x; z &lt; arr.length; z++) &#123;</span><br><span class="line">                front.append(arr[z][z]);</span><br><span class="line">                <span class="keyword">for</span> (String word : words) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (word.equals(front.toString())) &#123;</span><br><span class="line">                        System.out.println(front.toString());</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//正对角线反</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> x = arr.length - <span class="number">1</span>; x &gt;= <span class="number">0</span>; x--) &#123;</span><br><span class="line">            StringBuilder front = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> z = x; z &gt;= <span class="number">0</span>; z--) &#123;</span><br><span class="line">                front.append(arr[z][z]);</span><br><span class="line">                <span class="keyword">for</span> (String word : words) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (word.equals(front.toString())) &#123;</span><br><span class="line">                        System.out.println(front.toString());</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//反对角线正</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">0</span>; x &lt; arr.length; x++) &#123;</span><br><span class="line">            StringBuilder front = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> z = x; z &lt; arr.length; z++) &#123;</span><br><span class="line">                front.append(arr[z][arr.length - z - <span class="number">1</span>]);</span><br><span class="line">                <span class="keyword">for</span> (String word : words) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (word.equals(front.toString())) &#123;</span><br><span class="line">                        System.out.println(front.toString());</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//反对角线反</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> x = arr.length - <span class="number">1</span>; x &gt;= <span class="number">0</span>; x--) &#123;</span><br><span class="line">            StringBuilder front = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> z = x; z &gt;= <span class="number">0</span>; z--) &#123;</span><br><span class="line">                front.append(arr[z][arr.length - z - <span class="number">1</span>]);</span><br><span class="line">                <span class="keyword">for</span> (String word : words) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (word.equals(front.toString())) &#123;</span><br><span class="line">                        System.out.println(front.toString());</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="课后练习"><a href="#课后练习" class="headerlink" title="课后练习"></a>课后练习</h2><h3 id="解字谜游戏"><a href="#解字谜游戏" class="headerlink" title="解字谜游戏"></a>解字谜游戏</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordPuzzle</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">solution</span><span class="hljs-params">(<span class="hljs-keyword">char</span>[][] arr, String[] words)</span> </span>&#123;<br>        <span class="hljs-comment">//横正查找</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> x = <span class="hljs-number">0</span>; x &lt; arr.length; x++) &#123;<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> y = <span class="hljs-number">0</span>; y &lt; arr[<span class="hljs-number">0</span>].length; y++) &#123;<br>                StringBuilder front = <span class="hljs-keyword">new</span> StringBuilder();<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> z = y; z &lt; arr[<span class="hljs-number">0</span>].length; z++) &#123;<br>                    front.append(arr[x][z]);<br>                    <span class="hljs-keyword">for</span> (String word : words) &#123;<br>                        <span class="hljs-keyword">if</span> (word.equals(front.toString())) &#123;<br>                            System.out.println(front.toString());<br>                        &#125;<br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-comment">//横反查找</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> x = <span class="hljs-number">0</span>; x &lt; arr.length; x++) &#123;<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> y = arr[<span class="hljs-number">0</span>].length - <span class="hljs-number">1</span>; y &gt;= <span class="hljs-number">0</span>; y--) &#123;<br>                StringBuilder front = <span class="hljs-keyword">new</span> StringBuilder();<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> z = y; z &gt;= <span class="hljs-number">0</span>; z--) &#123;<br>                    front.append(arr[x][z]);<br>                    <span class="hljs-keyword">for</span> (String word : words) &#123;<br>                        <span class="hljs-keyword">if</span> (word.equals(front.toString())) &#123;<br>                            System.out.println(front.toString());<br>                        &#125;<br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-comment">//竖正</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> y = <span class="hljs-number">0</span>; y &lt; arr[<span class="hljs-number">0</span>].length; y++) &#123;<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> x = <span class="hljs-number">0</span>; x &lt; arr.length; x++) &#123;<br>                StringBuilder front = <span class="hljs-keyword">new</span> StringBuilder();<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> z = x; z &lt; arr.length; z++) &#123;<br>                    front.append(arr[z][y]);<br>                    <span class="hljs-keyword">for</span> (String word : words) &#123;<br>                        <span class="hljs-keyword">if</span> (word.equals(front.toString())) &#123;<br>                            System.out.println(front.toString());<br>                        &#125;<br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-comment">//竖反</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> y = <span class="hljs-number">0</span>; y &lt; arr[<span class="hljs-number">0</span>].length; y++) &#123;<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> x = arr.length - <span class="hljs-number">1</span>; x &gt;= <span class="hljs-number">0</span>; x--) &#123;<br>                StringBuilder front = <span class="hljs-keyword">new</span> StringBuilder();<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> z = x; z &gt;= <span class="hljs-number">0</span>; z--) &#123;<br>                    front.append(arr[z][y]);<br>                    <span class="hljs-keyword">for</span> (String word : words) &#123;<br>                        <span class="hljs-keyword">if</span> (word.equals(front.toString())) &#123;<br>                            System.out.println(front.toString());<br>                        &#125;<br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-comment">//正对角线正</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> x = <span class="hljs-number">0</span>; x &lt; arr.length; x++) &#123;<br>            StringBuilder front = <span class="hljs-keyword">new</span> StringBuilder();<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> z = x; z &lt; arr.length; z++) &#123;<br>                front.append(arr[z][z]);<br>                <span class="hljs-keyword">for</span> (String word : words) &#123;<br>                    <span class="hljs-keyword">if</span> (word.equals(front.toString())) &#123;<br>                        System.out.println(front.toString());<br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-comment">//正对角线反</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> x = arr.length - <span class="hljs-number">1</span>; x &gt;= <span class="hljs-number">0</span>; x--) &#123;<br>            StringBuilder front = <span class="hljs-keyword">new</span> StringBuilder();<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> z = x; z &gt;= <span class="hljs-number">0</span>; z--) &#123;<br>                front.append(arr[z][z]);<br>                <span class="hljs-keyword">for</span> (String word : words) &#123;<br>                    <span class="hljs-keyword">if</span> (word.equals(front.toString())) &#123;<br>                        System.out.println(front.toString());<br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-comment">//反对角线正</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> x = <span class="hljs-number">0</span>; x &lt; arr.length; x++) &#123;<br>            StringBuilder front = <span class="hljs-keyword">new</span> StringBuilder();<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> z = x; z &lt; arr.length; z++) &#123;<br>                front.append(arr[z][arr.length - z - <span class="hljs-number">1</span>]);<br>                <span class="hljs-keyword">for</span> (String word : words) &#123;<br>                    <span class="hljs-keyword">if</span> (word.equals(front.toString())) &#123;<br>                        System.out.println(front.toString());<br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-comment">//反对角线反</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> x = arr.length - <span class="hljs-number">1</span>; x &gt;= <span class="hljs-number">0</span>; x--) &#123;<br>            StringBuilder front = <span class="hljs-keyword">new</span> StringBuilder();<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> z = x; z &gt;= <span class="hljs-number">0</span>; z--) &#123;<br>                front.append(arr[z][arr.length - z - <span class="hljs-number">1</span>]);<br>                <span class="hljs-keyword">for</span> (String word : words) &#123;<br>                    <span class="hljs-keyword">if</span> (word.equals(front.toString())) &#123;<br>                        System.out.println(front.toString());<br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;<br><br></code></pre></td></tr></table></figure>
 
-<h3 id="PrintDigit"><a href="#PrintDigit" class="headerlink" title="PrintDigit"></a>PrintDigit</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printDigit</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n / <span class="number">10</span> &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">&quot;只能输出1位数字&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.print(n);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">usePrintDigit</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (Math.abs(n) &lt; <span class="number">10</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (n &lt; <span class="number">0</span>) &#123;</span><br><span class="line">            System.out.print(<span class="string">&quot;-&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        printDigit(Math.abs(n % <span class="number">10</span>));</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        usePrintDigit(n / <span class="number">10</span>);</span><br><span class="line">        printDigit(Math.abs(n % <span class="number">10</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="PrintDigit"><a href="#PrintDigit" class="headerlink" title="PrintDigit"></a>PrintDigit</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printDigit</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (n / <span class="hljs-number">10</span> &gt; <span class="hljs-number">0</span>) &#123;<br>        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> RuntimeException(<span class="hljs-string">&quot;只能输出1位数字&quot;</span>);<br>    &#125;<br>    System.out.print(n);<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">usePrintDigit</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (Math.abs(n) &lt; <span class="hljs-number">10</span>) &#123;<br>        <span class="hljs-keyword">if</span> (n &lt; <span class="hljs-number">0</span>) &#123;<br>            System.out.print(<span class="hljs-string">&quot;-&quot;</span>);<br>        &#125;<br>        printDigit(Math.abs(n % <span class="hljs-number">10</span>));<br>    &#125; <span class="hljs-keyword">else</span> &#123;<br>        usePrintDigit(n / <span class="hljs-number">10</span>);<br>        printDigit(Math.abs(n % <span class="hljs-number">10</span>));<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h3 id="求n的二进制中有多少个1"><a href="#求n的二进制中有多少个1" class="headerlink" title="求n的二进制中有多少个1"></a>求n的二进制中有多少个1</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">oneSum</span><span class="params">(<span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (num == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (num % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> oneSum(num / <span class="number">2</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> oneSum(num / <span class="number">2</span>) + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">oneSum</span><span class="params">(<span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (num == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">           <span class="keyword">return</span> oneSum(num / <span class="number">2</span>) + num%<span class="number">2</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="求n的二进制中有多少个1"><a href="#求n的二进制中有多少个1" class="headerlink" title="求n的二进制中有多少个1"></a>求n的二进制中有多少个1</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">oneSum</span><span class="hljs-params">(<span class="hljs-keyword">int</span> num)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span> (num == <span class="hljs-number">1</span>) &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (num % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) &#123;<br>            <span class="hljs-keyword">return</span> oneSum(num / <span class="hljs-number">2</span>);<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-keyword">return</span> oneSum(num / <span class="hljs-number">2</span>) + <span class="hljs-number">1</span>;<br>        &#125;<br>    &#125;<br><br><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">oneSum</span><span class="hljs-params">(<span class="hljs-keyword">int</span> num)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span> (num == <span class="hljs-number">1</span>) &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;<br>        &#125;<br>           <span class="hljs-keyword">return</span> oneSum(num / <span class="hljs-number">2</span>) + num%<span class="hljs-number">2</span>;<br>    &#125;<br></code></pre></td></tr></table></figure>
 
 <h3 id="2-100mod5"><a href="#2-100mod5" class="headerlink" title="2^100mod5"></a>2^100mod5</h3><p>2^^(n+4)^%5 = 2^^n^%5</p>
 <p>mod运算要找规律，看最后一位的数字</p>
-<h1 id="通透"><a href="#通透" class="headerlink" title="通透"></a>通透</h1><p><img src="C:\Users\lemon\AppData\Roaming\Typora\typora-user-images\image-20210928220854423.png" alt="image-20210928220854423"></p>
+<h1 id="通透"><a href="#通透" class="headerlink" title="通透"></a>通透</h1><p><img src="C:\Users\lemon\AppData\Roaming\Typora\typora-user-images\image-20210928220854423.png" srcset="/img/loading.gif" lazyload alt="image-20210928220854423"></p>
 
-      
-    </div>
-    
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2021/11/12/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <strong class="article-nav-caption">&gt;</strong>
-    </a>
-  
-</nav>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/11/12/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
 
-  
-</article>
-
-
-<div class="ds-share share" data-thread-key="数据结构" data-title="" data-url="http://example.com/2021/11/12/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="">
-    <div class="ds-share-inline">
-      <ul  class="ds-share-icons-16">
-      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
-        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-      </ul>
-      <div class="ds-share-icons-more">
-      </div>
-    </div>
- </div>
- 
-
-
-
-
-
-</div>
-      <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-      <div class="footer-left">
-        &copy; 2021 John Doe
-      </div>
-        <div class="footer-right">
-          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+            
+          </article>
         </div>
-    </div>
-  </div>
-</footer>
+      </div>
     </div>
     
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
 
-
-
-<script>
-	var yiliaConfig = {
-		fancybox: true,
-		mathjax: true,
-		animate: true,
-		isHome: false,
-		isPost: true,
-		isArchive: false,
-		isTag: false,
-		isCategory: false,
-		open_in_new: false
-	}
-</script>
-
-<script src="/js/main.js"></script>
-
-
-
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-});
-
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
-});
-</script>
-
-<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
-
-
+      </div>
+    
   </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
 </body>
 </html>
