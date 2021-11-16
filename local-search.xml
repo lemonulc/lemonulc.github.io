@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>一些数据库知识的了解</title>
+    <link href="/2021/11/16/%E4%B8%80%E4%BA%9B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%9A%84%E4%BA%86%E8%A7%A3/"/>
+    <url>/2021/11/16/%E4%B8%80%E4%BA%9B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%9A%84%E4%BA%86%E8%A7%A3/</url>
+    
+    <content type="html"><![CDATA[<h3 id="读写分离"><a href="#读写分离" class="headerlink" title="读写分离"></a>读写分离</h3><p>读写分离，基本的原理是</p><pre><code>- 主数据库处理事务性增、改、删操作（INSERT、UPDATE、DELETE）- 从数据库处理SELECT查询操作</code></pre><p><img src="/img/sql_1.png"></p><h3 id="垂直切分"><a href="#垂直切分" class="headerlink" title="垂直切分"></a>垂直切分</h3><p>垂直拆分：原来一个表的信息，拆分到两个或者多个表中，通过主键来进行关联。（垂直拆分列，列数据拆分到不同表中）<br> <strong>垂直切分的优点</strong></p><ul><li>数据库的拆分简单明了，拆分规则明确；</li><li>应用程序模块清晰明确，整合容易；</li><li>数据维护方便易行，容易定位；</li></ul><p><strong>垂直切分的缺点</strong></p><ul><li>部分表关联无法在数据库级别完成，需要在程序中完成；</li><li>单表大数据量仍然存在性能瓶颈；</li><li>事务处理相对更为复杂；</li><li>切分达到一定程度之后，扩展性会遇到限制；</li></ul><h3 id="水平切分"><a href="#水平切分" class="headerlink" title="水平切分"></a>水平切分</h3><p>水平切分：把一个表的数据按照某种规则划分到不同表或数据库里。（水平拆分行，行数据拆分到不同表中）</p><p><strong>水平切分的优点</strong></p><ul><li>解决单表大数据量性能遇到瓶颈的问题；</li><li>应用程序端整体架构改动相对较少；</li><li>事务处理相对简单；</li><li>只要切分规则能够定义好，基本上较难遇到扩展性限制；</li></ul><p><strong>水平切分的缺点</strong></p><ul><li>切分规则相对更为复杂，很难抽象出一个能够满足整个数据库的切分规则；</li><li>后期数据的维护难度有所增加，人为手工定位数据更困难；</li><li>应用系统各模块耦合度较高，可能会对后面数据的迁移拆分造成一定的困难。</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>数据库</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>LRU缓存机制</title>
     <link href="/2021/11/13/LRU%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/"/>
     <url>/2021/11/13/LRU%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</url>

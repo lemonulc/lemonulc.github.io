@@ -13,21 +13,43 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="">
+  <meta name="description" content="水平切分，垂直切分，读写分离">
   <meta name="author" content="hjp">
   <meta name="keywords" content="">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://example.com/archives/2021/index.html">
+  <meta name="description" content="水平切分，垂直切分，读写分离">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一些数据库知识的了解">
+<meta property="og:url" content="http://example.com/2021/11/16/%E4%B8%80%E4%BA%9B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%9A%84%E4%BA%86%E8%A7%A3/index.html">
 <meta property="og:site_name" content="HIKARI">
+<meta property="og:description" content="水平切分，垂直切分，读写分离">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/sql_1.png">
+<meta property="article:published_time" content="2021-11-16T05:28:56.000Z">
+<meta property="article:modified_time" content="2021-11-16T05:39:16.033Z">
 <meta property="article:author" content="hjp">
+<meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/sql_1.png">
   
-  <title>归档 - HIKARI</title>
+  <title>一些数据库知识的了解 - HIKARI</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -54,7 +76,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -150,14 +172,56 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+         style="background: url('/img/test1.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="一些数据库知识的了解">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-11-16 13:28" pubdate>
+        2021年11月16日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      489 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      2 分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-page-views"></span> 次
+      </span>
+    
+  
+</div>
 
             
           </div>
@@ -170,58 +234,142 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 4 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/2021/11/16/%E4%B8%80%E4%BA%9B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9F%A5%E8%AF%86%E7%9A%84%E4%BA%86%E8%A7%A3/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">一些数据库知识的了解</span>
-      <time style="float: right;">11-16</time>
-    </a>
-  
-    
-    <a href="/2021/11/13/LRU%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">LRU缓存机制</span>
-      <time style="float: right;">11-13</time>
-    </a>
-  
-    
-    <a href="/2021/11/12/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">第一篇博客</span>
-      <time style="float: right;">11-12</time>
-    </a>
-  
-    
-    <a href="/2021/11/12/hello-world/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hello World</span>
-      <time style="float: right;">11-12</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">一些数据库知识的了解</h1>
+            
+            <div class="markdown-body">
+              <h3 id="读写分离"><a href="#读写分离" class="headerlink" title="读写分离"></a>读写分离</h3><p>读写分离，基本的原理是</p>
+<pre><code>- 主数据库处理事务性增、改、删操作（INSERT、UPDATE、DELETE）
+- 从数据库处理SELECT查询操作
+</code></pre>
+<p><img src="/img/sql_1.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="垂直切分"><a href="#垂直切分" class="headerlink" title="垂直切分"></a>垂直切分</h3><p>垂直拆分：原来一个表的信息，拆分到两个或者多个表中，通过主键来进行关联。（垂直拆分列，列数据拆分到不同表中）<br> <strong>垂直切分的优点</strong></p>
+<ul>
+<li>数据库的拆分简单明了，拆分规则明确；</li>
+<li>应用程序模块清晰明确，整合容易；</li>
+<li>数据维护方便易行，容易定位；</li>
+</ul>
+<p><strong>垂直切分的缺点</strong></p>
+<ul>
+<li>部分表关联无法在数据库级别完成，需要在程序中完成；</li>
+<li>单表大数据量仍然存在性能瓶颈；</li>
+<li>事务处理相对更为复杂；</li>
+<li>切分达到一定程度之后，扩展性会遇到限制；</li>
+</ul>
+<h3 id="水平切分"><a href="#水平切分" class="headerlink" title="水平切分"></a>水平切分</h3><p>水平切分：把一个表的数据按照某种规则划分到不同表或数据库里。（水平拆分行，行数据拆分到不同表中）</p>
+<p><strong>水平切分的优点</strong></p>
+<ul>
+<li>解决单表大数据量性能遇到瓶颈的问题；</li>
+<li>应用程序端整体架构改动相对较少；</li>
+<li>事务处理相对简单；</li>
+<li>只要切分规则能够定义好，基本上较难遇到扩展性限制；</li>
+</ul>
+<p><strong>水平切分的缺点</strong></p>
+<ul>
+<li>切分规则相对更为复杂，很难抽象出一个能够满足整个数据库的切分规则；</li>
+<li>后期数据的维护难度有所增加，人为手工定位数据更困难；</li>
+<li>应用系统各模块耦合度较高，可能会对后面数据的迁移拆分造成一定的困难。</li>
+</ul>
 
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/11/13/LRU%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/">
+                        <span class="hidden-mobile">LRU缓存机制</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"wn8FwMYAmdDOlpVuPNf8p96l-gzGzoHsz","appKey":"Oy00b9wcx9FBHde9wSUzK7Ck","path":"window.location.pathname","placeholder":"龙哥就是龙","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"https://wn8fwmya.lc-cn-n1-shared.com","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -329,6 +477,19 @@
   
 
 
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
 
 
 
