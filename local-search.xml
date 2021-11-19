@@ -4,12 +4,43 @@
   
   
   <entry>
+    <title>Linux day 3</title>
+    <link href="/2021/11/19/Linux-day-3/"/>
+    <url>/2021/11/19/Linux-day-3/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Linux组"><a href="#Linux组" class="headerlink" title="Linux组"></a>Linux组</h3><p>linux中组可以分为三种：所有者，所属组，其他组</p><ul><li>所有者：创建该文件或文件夹的用户</li><li>所属组：创建该文件或文件夹的用户所在的组</li><li>其他组：非所属组</li></ul><p>修改用户的所属组：</p><p>​    usermod -g 目标组 用户名</p><h3 id="文件的权限"><a href="#文件的权限" class="headerlink" title="文件的权限"></a>文件的权限</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs txt">用ls -l 或者 ll 可以查看文件夹文件的详细信息，其中前10位就是文件的权限<br>-rw-r--r-- 1 root root 0 Nov 19 08:36 权限.txt（文件）<br><br>drwx------ 3 admin admin 4096 Nov  1 13:25 admin（文件夹）<br><br>0 1 2 3 4 5 6 7 8 9<br>- r w - r - - r - -<br>d r w x - - - - - -<br><br>r w x 分别代表 读(read) 写(write) 执行(excute)<br>第0位：文件的类型 <br>- 普通文件 <br>d 文件夹 <br>l 链接文件（相当于windows的快捷方式） <br>p 管道文件 <br>b 块设备文件 （如鼠标，键盘）<br>c 字符设备文件（如硬盘）<br>1-4：所有者的权限<br>4-7：所属组权限<br>7-10：其他组权限<br></code></pre></td></tr></table></figure><p>修改权限：</p><p>​    w r x</p><p>​    4 2 1</p><p>​    用2进制来代表权限可方便修改</p><p>​    chmod 777 文件名 相当于 把文件的权限改为 rwxrwxrwx </p><p>​    第一个7代表所有者的权限，然后依次代表所属组，其他组</p><p>修改文件所有者：</p><p>​    chown 用户名 文件</p><p>​    chown -R 用户名 文件夹/文件</p><p>修改文件所属组：</p><p>​    chgrp 目标组 文件</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Linux day 2</title>
     <link href="/2021/11/18/Linux-day-2/"/>
     <url>/2021/11/18/Linux-day-2/</url>
     
     <content type="html"><![CDATA[<h3 id="文件目录指令"><a href="#文件目录指令" class="headerlink" title="文件目录指令"></a>文件目录指令</h3><ul><li>访问文件夹：cd /xxx</li><li>回退：cd ..</li><li>回退到初始目录：cd ~（假如我是root用户，则返回到/root文件夹）</li><li>查看当前绝对路径：pwd</li><li>新建文件夹：mkdir /xxx，如果要一次性建多级目录，mkdir -p /xxx</li><li>删除文件夹：rm -r /xxx (r recursion 递归)，加 -f则不需要确认，删除文件不需要加-r</li><li>查看文件：cat xxx(显示全部内容)，more xxx(显示部分内容，可翻页)，less xxx(显示部分内容，可上下翻页)</li><li>查看文件并匹配字符串：cat xxx | grep “xxx”</li><li>移动文件或目录：mv xxx /xxx, mv /xxx1 /xxx2，(mv 后一个是待移动文件，然后是目标路径)</li><li>复制：cp  -r /xxx /xxx(复制文件夹) ,cp xxx /xxx(复制文件)</li><li>建立软连接：ln -s xxx xxx</li><li>echo &gt; &gt;&gt;：echo “xxx” &gt; xxx 写入并且覆盖，echo &gt;&gt; 追加</li><li>其他：history 查看历史命令</li></ul><h3 id="时间日期指令"><a href="#时间日期指令" class="headerlink" title="时间日期指令"></a>时间日期指令</h3><ul><li>日历：cal 本月日历, cal 21 21年的日历</li><li>日期：date</li><li>年：date “+%Y”</li><li>年月日：date “+%Y-%m-%d”</li></ul><h3 id="查找指令"><a href="#查找指令" class="headerlink" title="查找指令"></a>查找指令</h3><ul><li>find：find /xxx -name(type…) “xxx”</li><li>locate：先updatedb 然后 locate xxx</li><li>grep：grep “xxx” /xxx 主要用来匹配字符串</li></ul><h3 id="压缩和解压"><a href="#压缩和解压" class="headerlink" title="压缩和解压"></a>压缩和解压</h3><ul><li><p>gzip|gunzip:</p><p>压缩：gzip xxx</p><p>解压：gunzip xxx</p></li><li><p>zip|unzip:</p><p>压缩文件夹：zip -r /xxx</p><p>解压文件夹到指定文件夹：unzip -d /xxx xx.zip</p></li><li><p>tar:</p><p>压缩：tar -zcvf xxx.tar.gz 文件1 文件2</p><p>​            tar -zcvf xxx.tar.gz 目录</p><p>解压：tar -zxvf xxx.tar.gz</p><p>​            tar -zxvf xxx.tar.gz -C 目标路径</p></li></ul>]]></content>
     
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
     
     
     <tags>
@@ -30,6 +61,12 @@
     <content type="html"><![CDATA[<h3 id="vim"><a href="#vim" class="headerlink" title="vim"></a>vim</h3><p>linux系统内置vi文本编辑器，vim是vi的增强版</p><h4 id="三种模式"><a href="#三种模式" class="headerlink" title="三种模式"></a>三种模式</h4><ul><li>正常模式：不能编辑，可以复制，粘贴，删除，查找等</li><li>插入模式：可以编辑文件</li><li>命令行模式：执行命令，如保存，退出</li></ul><h4 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h4><p>正常模式下：</p><ul><li><p>yy 复制1行, 5yy复制5行</p></li><li><p>dd删除一行, 5dd删除5行</p></li><li><p>u 撤销</p></li><li><p>gg 定位到第一行, 5g定位到第五行</p></li><li><p>G 定位到最后一行</p></li><li><p>a 进入插入模式</p></li></ul><p>插入模式:</p><ul><li>esc 退出插入模式</li></ul><p>命令行模式:</p><ul><li><p>正常模式下输入:，后面就可以加相应命令了</p></li><li><p>:q 退出</p></li><li><p>:q! 强制退出</p></li><li><p>:wq 保存退出</p></li></ul><h3 id="关机重启"><a href="#关机重启" class="headerlink" title="关机重启"></a>关机重启</h3><p>关机：shutdown -h now 立刻关机</p><p>重启：reboot</p><p>存盘：sync 将内存中的数据存盘,用命令关机时最好存盘一次</p><h3 id="登陆注销"><a href="#登陆注销" class="headerlink" title="登陆注销"></a>登陆注销</h3><p>​    logout  登录shell才能使用</p><p>​    exit 只能在没有图形界面的模式下使用有效</p><p>​    su xxx 切换登录用户 高权限向低权限不需要输密码，反之要输入密码</p><h3 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h3><p>​    用户：</p><p>​        新建用户：useradd 用户名</p><p>​        设置密码：passwd 用户名</p><p>​        删除用户：userdel 用户名</p><p>​        完全删除：userdel -r 用户名</p><p>​        查询当前用户信息：id 用户名</p><p>​    组(group):</p><p>​        新建组：groupadd 组名</p><p>​        移动用户到其他组：usermod -g 组名</p><p>​        删除组：groupdel 组名</p><p>​        </p><p>​        </p><p>​    </p><p>​    </p><p>​    </p>]]></content>
     
     
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
     
     <tags>
       
@@ -49,6 +86,12 @@
     <content type="html"><![CDATA[<h3 id="读写分离"><a href="#读写分离" class="headerlink" title="读写分离"></a>读写分离</h3><p>读写分离，基本的原理是</p><pre><code>- 主数据库处理事务性增、改、删操作（INSERT、UPDATE、DELETE）- 从数据库处理SELECT查询操作</code></pre><p><img src="/img/sql_1.png"></p><h3 id="垂直切分"><a href="#垂直切分" class="headerlink" title="垂直切分"></a>垂直切分</h3><p>垂直拆分：原来一个表的信息，拆分到两个或者多个表中，通过主键来进行关联。（垂直拆分列，列数据拆分到不同表中）<br> <strong>垂直切分的优点</strong></p><ul><li>数据库的拆分简单明了，拆分规则明确；</li><li>应用程序模块清晰明确，整合容易；</li><li>数据维护方便易行，容易定位；</li></ul><p><strong>垂直切分的缺点</strong></p><ul><li>部分表关联无法在数据库级别完成，需要在程序中完成；</li><li>单表大数据量仍然存在性能瓶颈；</li><li>事务处理相对更为复杂；</li><li>切分达到一定程度之后，扩展性会遇到限制；</li></ul><h3 id="水平切分"><a href="#水平切分" class="headerlink" title="水平切分"></a>水平切分</h3><p>水平切分：把一个表的数据按照某种规则划分到不同表或数据库里。（水平拆分行，行数据拆分到不同表中）</p><p><strong>水平切分的优点</strong></p><ul><li>解决单表大数据量性能遇到瓶颈的问题；</li><li>应用程序端整体架构改动相对较少；</li><li>事务处理相对简单；</li><li>只要切分规则能够定义好，基本上较难遇到扩展性限制；</li></ul><p><strong>水平切分的缺点</strong></p><ul><li>切分规则相对更为复杂，很难抽象出一个能够满足整个数据库的切分规则；</li><li>后期数据的维护难度有所增加，人为手工定位数据更困难；</li><li>应用系统各模块耦合度较高，可能会对后面数据的迁移拆分造成一定的困难。</li></ul>]]></content>
     
     
+    <categories>
+      
+      <category>数据库</category>
+      
+    </categories>
+    
     
     <tags>
       
@@ -67,6 +110,22 @@
     
     <content type="html"><![CDATA[<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>运用你所掌握的数据结构，设计和实现一个  LRU (最近最少使用) 缓存机制 。<br>实现 LRUCache 类：</p><ul><li>LRUCache(int capacity) 以正整数作为容量 capacity 初始化 LRU 缓存</li><li>int get(int key) 如果关键字 key 存在于缓存中，则返回关键字的值，否则返回 -1 。</li><li>void put(int key, int value) 如果关键字已经存在，则变更其数据值；如果关键字不存在，则插入该组「关键字-值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。</li></ul><h4 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h4><hr><p>输入<br>[“LRUCache”, “put”, “put”, “get”, “put”, “get”, “put”, “get”, “get”, “get”]<br>[[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]<br>输出<br>[null, null, null, 1, null, -1, null, -1, 3, 4]</p><p>解释<br>LRUCache lRUCache = new LRUCache(2);<br>lRUCache.put(1, 1); // 缓存是 {1=1}<br>lRUCache.put(2, 2); // 缓存是 {1=1, 2=2}<br>lRUCache.get(1);    // 返回 1<br>lRUCache.put(3, 3); // 该操作会使得关键字 2 作废，缓存是 {1=1, 3=3}<br>lRUCache.get(2);    // 返回 -1 (未找到)<br>lRUCache.put(4, 4); // 该操作会使得关键字 1 作废，缓存是 {4=4, 3=3}<br>lRUCache.get(1);    // 返回 -1 (未找到)<br>lRUCache.get(3);    // 返回 3<br>lRUCache.get(4);    // 返回 4</p><hr><p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/lru-cache">https://leetcode-cn.com/problems/lru-cache</a></p><h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><ol><li><p>首先理解题目的意思，大概讲的就是，我最后操作的数据优先级最高，越早操作的数据优先级越低，当容量满的时候，我们要删除优先级最低的数据，再放入新的数据。(题中的数据是(k,v))</p><ul><li>放入新数据时，新数据的优先级提到最高（头插法）</li><li>访问数据时，被访问的数据优先级提到最高 （先删除节点，再用头插法）</li><li>放入新数据，缓存达到上限时，删除优先级最低的数据，再放入新数据，并把新数据的优先级提到最高</li></ul></li><li><p>使用双向循环链表+ Hashmap, 主要利用双向循环链表来实现优先级的判断，离表头越近优先级越高，表头的前一个那么优先级就自然最低了。实现一个双向节点类</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// priority 优先级</span><br><span class="hljs-comment">/**</span><br><span class="hljs-comment">* 实现一个双向节点类</span><br><span class="hljs-comment">* 实现头插法和删除节点的方法</span><br><span class="hljs-comment">**/</span><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LRUNode</span></span>&#123;<br>    <span class="hljs-keyword">int</span> key; <span class="hljs-comment">//为什么key也要存进来呢,下面会解释</span><br>    <span class="hljs-keyword">int</span> val;<br>    LRUNode pre;<br>    LRUNode after;<br>    LRUNode()&#123;&#125;<br>    LRUNode(<span class="hljs-keyword">int</span> key, <span class="hljs-keyword">int</span> val) &#123;<br>        <span class="hljs-keyword">this</span>.key = key;<br>        <span class="hljs-keyword">this</span>.val = val;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(LRUNode head)</span> </span>&#123;<br>        after = head.after;<br>        pre = head;<br>        head.after = <span class="hljs-keyword">this</span>;<br>        after.pre = <span class="hljs-keyword">this</span>;<br>    &#125;<br>    <br>    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">remove</span><span class="hljs-params">()</span> </span>&#123;<br>        pre.after = after;<br>        after.pre = pre;<br>        <span class="hljs-keyword">return</span> key;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>现在有了双向循环链表，就可以来实现解题思路了</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LRUCache</span></span>&#123;<br>    LRUNode head; <span class="hljs-comment">//头结点用来做优先级处理</span><br>    <span class="hljs-keyword">int</span> size; <span class="hljs-comment">//缓存大小</span><br>    HashMap&lt;Integer,LRUNode&gt; lru; <span class="hljs-comment">//用HashMap做缓存区</span><br>    <br>    <span class="hljs-comment">//构造方法</span><br>    LRUCache(<span class="hljs-keyword">int</span> size)&#123;<br>        head = <span class="hljs-keyword">new</span> LRUNode();<br>        head.after = head;<br>        head.pre = head;<br>        <span class="hljs-keyword">this</span>.size = size;<br>        lru = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();<br>    &#125;<br>    <br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">get</span><span class="hljs-params">(<span class="hljs-keyword">int</span> key)</span></span>&#123;<br>        LRUNode temp = lru.get(key);<br>        <span class="hljs-keyword">if</span>(temp == <span class="hljs-keyword">null</span>) &#123;<br>            <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;<br>        &#125;<br>        <span class="hljs-comment">//先删除节点再用头插法就能提高优先级，因为我们认为头结点的下一个优先级最高，头结点前一个优先级最低</span><br>        temp.remove();<br>        temp.insert(head);<br>        <span class="hljs-keyword">return</span> temp.val;<br>    &#125;<br>    <br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">put</span><span class="hljs-params">(<span class="hljs-keyword">int</span> key, <span class="hljs-keyword">int</span> value)</span> </span>&#123;<br>        <span class="hljs-comment">//先看看缓存中有没有key</span><br>        LRUNode temp = lru.get(key);<br>        <span class="hljs-keyword">if</span>(temp == <span class="hljs-keyword">null</span>) &#123;<br>            <span class="hljs-comment">//如果没有，则new一个新节点</span><br>            temp = <span class="hljs-keyword">new</span> LRUNode(key,value);<br>            <span class="hljs-comment">//放入缓存</span><br>            lru.put(key,temp);<br>            <span class="hljs-comment">//判断缓存是否溢出</span><br>            <span class="hljs-keyword">if</span>(lru.size() &gt; size) &#123;<br>                <span class="hljs-comment">//缓存溢出，删除优先级最小的数据，这也是为什么要存key到节点中，hashmap删除数据时需要用到key</span><br>                lru.remove(head.pre.remove());<br>            &#125;<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-comment">//如果存在,则修改value</span><br>            temp.val = value;<br>            <span class="hljs-comment">//要提高优先级，先删除节点</span><br>            temp.remove();<br>        &#125;<br>        <span class="hljs-comment">//头插法提高优先级</span><br>        temp.insert(head);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li></ol><p><img src="/img/leetcode_146.png"></p><p>​    第一次提交速度不是很快，但是后面再提交的时候速度又提上来了，不知道为什么</p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>主要考察双向循环链表和哈希表，难点在于如何用双向循环链表来实现优先级的判断</p><h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>欢迎提问，以及建议。</p>]]></content>
     
+    
+    <categories>
+      
+      <category>数据结构</category>
+      
+      <category>哈希表</category>
+      
+      <category>链表</category>
+      
+      <category>算法</category>
+      
+      <category>Leetcode</category>
+      
+      <category>java</category>
+      
+    </categories>
     
     
     <tags>
